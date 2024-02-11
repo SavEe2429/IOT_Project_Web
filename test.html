@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scroll</title>
+    <style>
+        html {
+          scroll-behavior: smooth;
+        }
+
+        section {
+            height: 500px;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="scrollToSection('section1')">Go to Section 1</button>
+    <button onclick="scrollToSection('section2')">Go to Section 2</button>
+
+    <section id="section1">
+        <h2>Section 1</h2>
+        <!-- ข้อมูลในตำแหน่งที่ 1 -->
+    </section>
+
+    <section id="section2">
+        <h2>Section 2</h2>
+        <!-- ข้อมูลในตำแหน่งที่ 2 -->
+    </section>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
