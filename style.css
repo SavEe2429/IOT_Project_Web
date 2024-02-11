@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:cursive, 'Times New Roman', Times, serif;
+}
+
+@keyframes scrollAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.your-element {
+    animation: scrollAnimation 0.5s ease-out;
+}
+
+body {
+    
+    height: auto;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    padding: 15px;
+    overflow-y: auto;
+    width: 180px;
+    background-color: #000;
+    border-right: 1px dashed #fff;
+}
+
+.justify_content_center {
+    justify-content: center!important;
+}
+
+.d_flex {
+    display: flex!important;
+}
+
+.flex_column{
+    flex-direction: column!important;
+}
+
+.nav_menu {
+    padding-left: 10px;
+    
+}
+
+.nav_menu *{
+    margin: 0;
+    list-style: none;
+}
+
+
+.nav_menu ul li {
+    background-color:#fff;
+    border-radius: 50px;
+    padding: 15px;
+    margin: 15px 0;
+    width: 50px;
+    overflow: hidden;
+}
+
+.nav_menu ul li span  {
+    display: none;
+    position: absolute;
+    /* left: 50%; */
+    float: right;
+    /* transform: translateX(-30%); */
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    padding-left: 16px;
+    z-index: 1;
+}
+
+.nav_menu .home:hover span {
+    display: inline-block;
+}
+.nav_menu .home:hover li {
+    width: 105px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav_menu .about:hover span {
+    display: inline-block;
+}
+.nav_menu .about:hover li {
+    width: 110px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav_menu .refer:hover span {
+    display: inline-block;
+}
+.nav_menu .refer:hover li {
+    width: 140px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav_menu .contact:hover span {
+    display: inline-block;
+}
+.nav_menu .contact:hover li {
+    width: 130px;
+    transition: 0.3s ease-in-out;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+section {
+    overflow: hidden;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+#background {
+    background-color: #ffffff;
+    width: 85%;
+    left: 15%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+    
+    /* background-position: center center;  */
+    /* background-attachment: fixed;  */
+    /* margin-left: 180px; */
+}
+
+
+.background  {
+    height: 250px;
+    width: 90%;
+    position: absolute;
+    top: 10px;
+    left: 5%;
+    right: 5%;
+    border-radius: 70px;
+    z-index: 1;   
+    /* background-color: #000; */
+
+}
+
+.text {
+    text-align: center;
+}
+
+.text h1  {
+    z-index: 2;
+    /* position: absolute; */
+    /* top: 50%; */
+    margin-top: 50px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #000;
+    /* text-shadow:  -3px 1px 0 #887575; */
+} 
+
+.text p {
+    z-index: 2;
+    /* position: absolute; */
+    /* top: 55%; */
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    /* text-shadow:  -1px 1px 0 #8b17d7; */
+}
+
+/* -------------------------------------------------------------------------------- */
+
+footer {
+    background-color: #000; /* สีดำ */
+    color: #fff; /* สีขาว */
+    padding: 25px; /* เพิ่ม padding เพื่อให้เนื้อหาไม่ติดกับขอบ */
+    width: 100%;
+    text-align: center; /* ตำแหน่งข้อความในศูนย์กลาง */
+    position: absolute;
+    z-index: 100;
+    border-top:1px dashed #fff ;
+}
+
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* CSS for modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 0;
+    border: 1px solid #888;
+    border-radius: 15px;
+    width: 40%;
+}
+
+.modal-content h1 {
+    width: 100%;
+    border-radius: 15px 15px 0 0 ;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    /* border-bottom: 1px dashed #fff;  */
+}
+
+.modal-content p {
+    padding: 10px;
+}
+
+.close {
+    color: #7b7b7b;
+    float: right;
+    margin: 5px 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+}
+
