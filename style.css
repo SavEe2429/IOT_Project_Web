@@ -338,7 +338,7 @@ footer {
 }
 
 .close {
-    color: #7b7b7b;
+    color: #fff;
     float: right;
     margin: 5px 15px;
     font-size: 28px;
@@ -348,7 +348,7 @@ footer {
 
 .close:hover,
 .close:focus {
-    color: rgb(255, 255, 255);
+    color: rgb(0,0,0);
     text-decoration: none;
     cursor: pointer;
 }
